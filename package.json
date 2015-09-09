@@ -13,6 +13,17 @@
     "lightweight"
   ],
   "main": ["src/angular-resizable.js", "src/angular-resizable.css"],
+  "jspm": {
+    "dependencies": {
+      "css": "systemjs/plugin-css@^0.1.9"
+    },
+    "shim": {
+      "angular-resizable": {
+        "deps": [
+          "src/angular-resizable.css!"
+        ]
+      }
+    },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
